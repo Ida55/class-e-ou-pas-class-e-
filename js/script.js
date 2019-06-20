@@ -2,13 +2,13 @@
 /* Merci bcp à Lucy pour le code :) */
 
 /* le click sur les éléments cercles et carrés génère la coloration de ces éléments (déterminé via la classe 'fill' du document css)*/ 
- $('.btn1').click(function() {
+ $('.btn-full').click(function() {
     $('circle').addClass('fill1');  
     $('rect').addClass('fill1');
  });
 
 /* le click sur les éléments cercles et carrés génère le déssemplissage de ces éléments*/
-$('.btn2').click(function() {
+$('.btn-empty').click(function() {
     $('circle').removeClass('fill1 fill2 fill3 fill4 fill5 fill6'); /* Merci Nicolas, tous les éléments se vident lorsque le bouton empty est cliqué*/
     $('rect').removeClass('fill1 fill2 fill3 fill4 fill5 fill6');
 })
@@ -17,10 +17,9 @@ $('circle').click(function() {
     $(this).toggleClass('fill1'); /* avec (this) on précise bien que ce sont les cercles qui sont concernés */
 })
 
-
 $(document).ready(function () { 
     $("#recta").click(function () { 
-        if($("#recta").hasClass("fill1")) {  /* si la l'élément concerné par l'i.d recta est cliqué et qu'il à la classe fill1 (déterminée dans le CSS)*/
+        if($("#recta").hasClass("fill1")) {  /* si l'élément concerné par l'i.d recta est cliqué et qu'il à la classe fill1 (déterminée dans le CSS)*/
             $(".line1").removeClass("fill1"); /* on enlève la classe fill1 (couleur orange) des éléments concernés par la classe line1*/
         } else { 
             $(".line1").addClass("fill2"); /* ou alors on ajoute la classe fill2 aux éléments concernés par la classe line1*/
