@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 3px solid red; */
+}
+
+@media screen and (min-width: 640px) {
+    body {
+
+    }
+}
+
+
+#container {
+    margin: 0 auto;
+    width: 969px;
+    height: 670px;
+    border: 10px solid black;
+}
+
+.btn1, .btn2 {
+    position: relative;
+    /* border-radius: 55px; */
+    width: 110px;
+    height: 30px;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 20px;
+    color: white;
+    background-color: black;
+}
+
+.btn1 {
+    position: absolute;
+    top: 310px;
+    left: 277px;
+}
+
+.btn2 {
+    position: absolute;
+    top: 315px;
+    left: 1100px;
+} 
+
+.fill {
+    fill: rgb(241, 194, 105);
+}
+
+.fill2 {
+    fill: rgb(195, 236, 134);
+}
+
+.fill3 {
+    fill: rgb(195, 246, 248);
+}
+
+.fill4 {
+    fill: rgb(233, 203, 233);
+}
+
+.fill5 {
+    fill: rgb(250, 240, 99);
+}
+
+.fill6 {
+    fill: rgb(255, 187, 199);
+}
